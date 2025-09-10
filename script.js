@@ -100,3 +100,105 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// restaurant list 
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.getElementById("cards");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  const cards = document.querySelectorAll(".restaurant-card");
+
+  let currentIndex = 0;
+
+  // Calculate visible cards based on screen size
+  function getVisibleCards() {
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    if (window.innerWidth <= 1024) return 3;
+    return 4; // default for desktop
+  }
+
+  // Update carousel position
+  function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth + 32; // Include gap
+    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    // Enable/Disable buttons when needed
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= cards.length - getVisibleCards();
+  }
+
+  // Next Button → Move 1 Card Forward
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < cards.length - getVisibleCards()) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  // Prev Button → Move 1 Card Backward
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  // Update slider on window resize
+  window.addEventListener("resize", updateCarousel);
+
+  // Initialize carousel on load
+  updateCarousel();
+
+});
+
+
+//  restaurant list 2
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel2 = document.getElementById("cards-2");
+  const prevBtn2 = document.getElementById("prev-2");
+  const nextBtn2 = document.getElementById("next-2");
+  const cards2 = document.querySelectorAll("#cards-2 .restaurant-card-img");
+
+  let currentIndex2 = 0;
+
+  // Calculate visible cards based on screen width
+  function getVisibleCards2() {
+    if (window.innerWidth <= 600) return 1;
+    if (window.innerWidth <= 1024) return 2;
+    return 3; // Default: 3 on desktop
+  }
+
+  // Update carousel position
+  function updateCarousel2() {
+    const cardWidth = cards2[0].offsetWidth + 16; // width + gap
+    carousel2.style.transform = `translateX(-${currentIndex2 * cardWidth}px)`;
+
+    // Enable/Disable buttons dynamically
+    prevBtn2.disabled = currentIndex2 === 0;
+    nextBtn2.disabled = currentIndex2 >= cards2.length - getVisibleCards2();
+  }
+
+  // Next Button
+  nextBtn2.addEventListener("click", () => {
+    if (currentIndex2 < cards2.length - getVisibleCards2()) {
+      currentIndex2++;
+      updateCarousel2();
+    }
+  });
+
+  // Previous Button
+  prevBtn2.addEventListener("click", () => {
+    if (currentIndex2 > 0) {
+      currentIndex2--;
+      updateCarousel2();
+    }
+  });
+
+  // Update on window resize
+  window.addEventListener("resize", updateCarousel2);
+
+  // Initialize
+  updateCarousel2();
+
+})

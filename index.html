@@ -177,18 +177,369 @@
          </div>
       </section>
       <section class="container" id="restaurant-list">
-         <div class="d-flex">
+         <div class="heading-row d-flex">
             <h2>Top Restaurants Near You</h2>
-            <!-- next and previous button -->
-               <button class="nav-btn next" onclick="moveSlide()">
-                  <img src="./images/arrow right.webp" alt="Next">
-               </button>
-               <button class="nav-btn next" onclick="moveSlide()">
-                  <img src="./images/arrow right.webp" alt="Next">
-               </button>
+            <div class="controls">
+               <button class="control-btn" id="prev"><i class="fas fa-chevron-left"></i></button>
+               <button class="control-btn" id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+         </div>
+
+         <!-- Slider -->
+         <div class="slider-wrapper">
+            <div class=" d-flex carousel" id="cards">
+
+               <!-- Card 1: Feeling Sugar-->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Feeling Sugar.webp" alt="Feeling Sugar" class="background-img" loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/Feeling Sugar logo.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- Card 2: The Bakery Blere  -->
+               <div class=" restaurant-card closed">
+                  <div class="restaurant-card-img">
+                     <img src="./images/The Bakery Blere.webp" alt="The Bakery Blere" class="background-img"
+                        loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/The Bakery Blere logo.webp" alt="The Bakery Blere Logo" class="badge-logo">
+                     </span>
+                     <div>
+                        <img src="./images/closed.webp" alt="closed" class="overlay">
+                     </div>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">The Bakery Blere</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- card 3 -->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Feeling Sugar 2.webp" alt="Feeling Sugar -2" class="background-img"
+                        loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/BI.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- card 4 -->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Ookie Cookie.webp" alt="Feeling Sugar -2" class="background-img" loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/BI.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- card 5 -->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Feeling Sugar 2.webp" alt="Feeling Sugar -2" class="background-img"
+                        loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/BI.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- card 6 -->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Feeling Sugar 2.webp" alt="Feeling Sugar -2" class="background-img"
+                        loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/BI.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- card 7 -->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Feeling Sugar 2.webp" alt="Feeling Sugar -2" class="background-img"
+                        loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/BI.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- card 8 -->
+               <div class=" restaurant-card">
+                  <div class="restaurant-card-img">
+                     <img src="./images/Feeling Sugar 2.webp" alt="Feeling Sugar -2" class="background-img"
+                        loading="lazy">
+                     <button class="fav-btn" aria-label="Add to favourite"><i class="fa-regular fa-heart"></i></button>
+                     <span class="restaurant-card-badge">
+                        <img src="./images/BI.webp" alt="Feeling Sugar Logo" class="badge-logo">
+                     </span>
+                  </div>
+                  <div class="restaurant-card-body d-flex">
+                     <div class="restaurant-card-title-row d-block">
+                        <h2 class="restaurant-card-title">Feeling Sugar</h2>
+                        <h3 class="restaurant-card-desc">Chinese, Mongolian, Noodles, Soup</h3>
+                        <div class="restaurant-card-meta">
+                           <h3>24-34 min</h3>
+                           <h3>1.4 km</h3>
+                           <h3><img src="./images/Rectangle.webp" alt="distance"> KD 1.00</h3>
+                        </div>
+                        <div class="restaurant-card-offer">40% off on orders above KD 4.00</div>
+                     </div>
+                     <div class="rating">
+                        <span class="restaurant-card-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                     </div>
+
+                  </div>
+               </div>
+
+
+            </div>
          </div>
       </section>
+      <section class="container" id="restaurant-list-2">
+         <div class="slider-wrapper">
+            <button class="control-btn" id="prev-2"><i class="fas fa-chevron-left"></i></button>
+            <!-- Card 1: Feeling Sugar-->
+            <div class=" carousel" id="cards-2">
+               <div class="restaurant-card-img">
+                  <img src="./images/FB 3.webp" alt="FB 3">
+               </div>
+               <div class="restaurant-card-img">
+                  <img src="./images/FB 3.webp" alt="FB 3">
+               </div>
+               <div class="restaurant-card-img">
+                  <img src="./images/FB 3.webp" alt="FB 3">
+               </div>
+               <div class="restaurant-card-img">
+                  <img src="./images/FB 3.webp" alt="FB 3">
+               </div>
+               <div class="restaurant-card-img">
+                  <img src="./images/FB 3.webp" alt="FB 3">
+               </div>
+
+            </div>
+            <button class="control-btn" id="next-2"><i class="fas fa-chevron-right"></i></button>
+
+         </div>
+         </div>
+      </section>
+
    </main>
+
+   <!-- footer -->
+
+   <footer class="footer container">
+      <div class="footer-container">
+
+         <div class="footer-col">
+            <h4>Popular</h4>
+            <ul>
+               <li>Healthy</li>
+               <li>Milk Shake</li>
+               <li>Cheesecake</li>
+               <li>Frozen Yoghurt</li>
+               <li>Waffle</li>
+               <li>Coffee</li>
+               <li>Arabic Sweet</li>
+            </ul>
+         </div>
+
+         <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+               <li>Influencer</li>
+               <li>Offers</li>
+               <li>Newly Added</li>
+               <li>Delivery</li>
+               <li>Trends</li>
+               <li>Ya Hala</li>
+            </ul>
+         </div>
+
+         <div class="footer-col">
+            <h4>Customer Account</h4>
+            <ul>
+               <li>Orders</li>
+               <li>Gifts</li>
+               <li>Invite Friends</li>
+               <li>Favourites</li>
+               <li>Addresses</li>
+               <li>My Loyalty</li>
+               <li>Zwara Credits</li>
+            </ul>
+         </div>
+
+         <div class="footer-col">
+            <h4>Help & Support</h4>
+            <ul>
+               <li>About Us</li>
+               <li>FAQ's</li>
+               <li>How to Order</li>
+               <li>Privacy Statement</li>
+               <li>Terms of Use</li>
+               <li>Data Deletion Policy</li>
+               <li>Feedback</li>
+            </ul>
+         </div>
+
+         <div class="footer-col contact">
+            <h4>Contact Us</h4>
+            <p>Whatsapp Us: +965 869878955</p>
+            <p>Call Us On: +965 869878955</p>
+            <p>Email: info@zwara.com</p>
+            <p>8:00 AM to 8:00 PM, 365 days</p>
+            <p>Should you encounter any bugs,<br>delayed deliveries, or other problems.</p>
+         </div>
+
+         <div class="footer-col download">
+            <h4>Download The App</h4>
+            <img src="./images/appstore.webp" alt="App Store">
+            <img src="./images/googleplay.webp" alt="Google Play">
+         </div>
+
+      </div>
+
+      <div class="footer-bottom">
+         <div class="logo-copyright d-flex">
+            <img src="./images/Zwara Logo.webp" class="me-3" alt="logo">
+            <p>© 2025 Zwara. All Rights Reserved.</p>
+         </div>
+         <div class="social-icons">
+            <div class="icon">
+               <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icon">
+               <i class="fab fa-facebook"></i>
+            </div>
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+
+
+
+         </div>
+      </div>
+   </footer>
+
    <script src="./script.js" crossorigin="anonymous"></script>
 </body>
 
