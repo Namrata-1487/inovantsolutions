@@ -158,10 +158,6 @@ header {
  transition: background 0.2s, color 0.2s;
 }
 
-#user-btn:hover {
- background: #ffb800;
- color: #fff;
-}
 
 .nav-link a:hover {
  background-color: white;
@@ -697,11 +693,14 @@ h3 {
 /* Carousel Container */
 #cards-2 {
  display: flex;
- justify-content: center;
  gap: 16px;
  transition: transform 0.5s ease-in-out;
  will-change: transform;
  /* remove overflow:hidden here */
+}
+
+#cards-2 img {
+ height: 100%;
 }
 
 #cards-2 .restaurant-card-img {
@@ -738,12 +737,76 @@ h3 {
  z-index: 999;
 }
 
+/* mobile-app */
+.mobile-app-section {
+ margin: 140px 0;
+ /* allow phones to stick out */
+}
+
+.mobile-app-container {
+
+ gap: 30px;
+ background-color: #DCDCDC;
+ padding: 50px 0 0 50px;
+ border-radius: 15px 15px;
+
+}
+
+.mobile-description,
+.mobile-app-text {
+ width: 100%;
+}
+
+.mobile-app-text h1 {
+ margin-bottom: 20px;
+}
+
+.mobile-app-text p {
+ font-size: 22px;
+ margin-bottom: 20px;
+ color: #5A5A5A;
+ font-weight: 400;
+}
+
+.app-buttons a img {
+ height: 50px;
+ margin-right: 12px;
+ cursor: pointer;
+ transition: transform 0.3s ease;
+}
+
+.app-buttons a img:hover {
+ transform: scale(1.05);
+}
+
+.right-side {
+ position: absolute;
+ right: 50px;
+ text-align: center;
+}
+
+.right-side img {
+ height: 580px;
+ margin-bottom: 50px;
+}
+
+.initial-logo {
+ float: right;
+ position: relative;
+ padding: 0;
+}
+
+.initial-logo img {
+ height: 80px;
+ width: 80px;
+}
+
 /* footer  */
 .footer {
  background: #b61d46;
  /* your maroon shade */
  color: #fff;
- padding: 70px 140px;
+ padding: 70px 140px 10px 140px;
  font-family: "Futura PT", sans-serif;
  border-radius: 70px 70px 0 0;
 }
@@ -794,6 +857,7 @@ h3 {
  justify-content: space-between;
  align-items: center;
  flex-wrap: wrap;
+ gap: 30px;
 }
 
 .footer-bottom p {
@@ -848,6 +912,11 @@ h3 {
   max-width: 48%;
   height: auto;
   min-width: 160px;
+ }
+
+ .mobile-app-container {
+  grid-template-columns: 1fr;
+  text-align: center;
  }
 }
 
