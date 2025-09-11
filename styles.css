@@ -53,6 +53,14 @@ body {
  padding: 15px 140px;
 }
 
+.text-center {
+ text-align: center;
+}
+
+.mt-2 {
+ margin-top: 16px;
+}
+
 a {
  font-size: 18px;
  text-decoration: none;
@@ -219,8 +227,12 @@ header {
  top: 9px;
 }
 
-*/ .me-3 {
+.me-3 {
  margin-right: 10px;
+}
+
+.me-2 {
+ margin-right: 40px;
 }
 
 .heading {
@@ -472,19 +484,27 @@ h3 {
 /* restaurant-list */
 
 /* Section Spacing */
-#restaurant-list {
+#restaurant-list,
+#PickedForYou,
+#DeliciousDeals {
  margin: 100px 0;
 }
 
 /* Heading Row */
-#restaurant-list .heading-row {
+#restaurant-list .heading-row,
+#our-influencer .heading-row,
+#PickedForYou .heading-row,
+#chocolate-list .heading-row,
+#DeliciousDeals .heading-row {
  display: flex;
  justify-content: space-between;
  align-items: center;
  margin-bottom: 15px;
 }
 
-#restaurant-list h2 {
+#restaurant-list h2,
+#our-influencer h2,
+#chocolate-list h2 {
  font-size: 22px;
  font-weight: 600;
  color: #222;
@@ -532,6 +552,7 @@ h3 {
 /* Carousel Container */
 .carousel {
  display: flex;
+ /* align-items: stretch; */
  gap: 32px;
  transition: transform 0.5s ease-in-out;
  will-change: transform;
@@ -542,15 +563,21 @@ h3 {
 }
 
 /* Restaurant Card */
-.restaurant-card {
+.restaurant-card,
+#chocolate-cards .chocolate-card {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ box-sizing: border-box;
  flex: 0 0 calc(25% - 24px);
- /* 4 cards visible at a time */
  background: #fff;
  border-radius: 12px;
  overflow: hidden;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  position: relative;
  transition: transform 0.3s ease;
+ height: 100%;
+ min-height: 100%;
 }
 
 .restaurant-card:hover {
@@ -605,7 +632,7 @@ h3 {
 
 /* Card Body */
 .restaurant-card-body {
- margin-top: 6%;
+ margin: 6% 0;
  padding: 12px;
  justify-content: start;
  align-items: flex-start;
@@ -686,6 +713,7 @@ h3 {
  align-items: center;
  gap: 12px;
  margin-top: 20px;
+ margin-bottom: 100px;
  overflow: hidden;
  /* <--- Moved here */
 }
@@ -737,6 +765,66 @@ h3 {
  z-index: 999;
 }
 
+/* our influencer  */
+#our-influencer,
+#chocolate-list {
+ background-color: #EF336F1F;
+ padding-top: 70px;
+ padding-bottom: 70px;
+}
+
+.Vector-5 {
+ position: absolute;
+ margin-top: -4.5em;
+ margin-left: 10em;
+}
+
+#our-influencer .carousel,
+#chocolate-list .carousel {
+ display: flex;
+ flex-wrap: nowrap;
+ gap: 24px;
+ transition: transform 0.5s cubic-bezier(.4, 1.3, .5, 1);
+ will-change: transform;
+}
+
+.influencer-card {
+ flex: 0 0 18.5%;
+
+ box-sizing: border-box;
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.influencer-card img {
+ width: 100%;
+ margin-bottom: 12px;
+}
+
+.influencer-card h3 {
+ font-size: 20px;
+ font-weight: 700;
+ color: #000;
+ margin: 0;
+}
+
+.influencer-grid {
+ grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 600px) {
+ .influencer-card {
+  flex: 0 0 98%;
+  max-width: 98%;
+  min-width: 120px;
+ }
+}
+
+
+
 /* mobile-app */
 .mobile-app-section {
  margin: 140px 0;
@@ -765,7 +853,7 @@ h3 {
  font-size: 22px;
  margin-bottom: 20px;
  color: #5A5A5A;
- font-weight: 400;
+ font-weight: 500;
 }
 
 .app-buttons a img {
@@ -786,7 +874,7 @@ h3 {
 }
 
 .right-side img {
- height: 580px;
+ height: 35em;
  margin-bottom: 50px;
 }
 
@@ -839,6 +927,7 @@ h3 {
 .footer-col p {
  font-size: 14px;
  margin-bottom: 8px;
+
 }
 
 .footer-col img {
@@ -861,7 +950,8 @@ h3 {
 }
 
 .footer-bottom p {
- font-size: 14px;
+ font-size: 19px;
+ color: #E6E6E6;
 }
 
 .social-icons {
@@ -876,16 +966,23 @@ h3 {
  border-radius: 50%;
 }
 
+.social-media {
+ gap: 16px;
+}
+
+.social-media p {
+ text-transform: uppercase;
+ color: #E6E6E6;
+ font-size: 18px;
+ font-weight: 500;
+}
+
 .social-icons i {
  margin: 10px;
  cursor: pointer;
  color: #b61d46;
  border-radius: 50%;
-
 }
-
-
-
 
 
 /* Responsive adjustments */
@@ -899,19 +996,18 @@ h3 {
  }
 
  .cards img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
  }
 
  #cards.carousel {
   gap: 16px;
  }
 
- .restaurant-card {
-  flex: 0 0 48%;
-  max-width: 48%;
-  height: auto;
-  min-width: 160px;
+ .restaurant-card,
+ #chocolate-list .chocolate-card {
+  flex: 0 0 44%;
+  overflow: none;
  }
 
  .mobile-app-container {
@@ -943,6 +1039,12 @@ h3 {
 
  .cousins-carousel-track {
   gap: 12px;
+ }
+
+ .restaurant-card,
+ #chocolate-list .chocolate-card {
+  flex: 0 0 44%;
+  overflow: none;
  }
 
  #cards-2 .restaurant-card-img {
@@ -1039,3 +1141,31 @@ h3 {
   margin: 30px;
  }
 }
+
+/* @media (max-width: 1200px) {
+ .influencer-card {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+ }
+}
+
+@media (max-width: 900px) {
+ .influencer-card {
+  flex: 0 0 50%;
+  max-width: 50%;
+ }
+}
+
+@media (max-width: 600px) {
+ .influencer-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+ }
+}
+
+@media (max-width: 900px) {
+ .influencer-card {
+  flex: 0 0 48%;
+  max-width: 48%;
+  min-width: 140px;
+ } */
