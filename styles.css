@@ -556,6 +556,7 @@ h3 {
 .carousel {
  display: flex;
  /* align-items: stretch; */
+ align-items: flex-start;
  gap: 32px;
  transition: transform 0.5s ease-in-out;
  will-change: transform;
