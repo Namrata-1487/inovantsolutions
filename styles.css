@@ -571,7 +571,6 @@ h3 {
 #chocolate-cards .chocolate-card {
  display: flex;
  flex-direction: column;
- justify-content: space-between;
  box-sizing: border-box;
  flex: 0 0 calc(25% - 24px);
  background: #fff;
