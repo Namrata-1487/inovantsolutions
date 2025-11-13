@@ -1,0 +1,58 @@
+[{
+ "id":1,
+ "logo": "/images/Feeling Sugar logo.webp",
+ "title":"Feeling Sugar",
+ "img": "/images/Feeling Sugar.webp",
+ "time": "24-34 min",
+ "distance": "1.4 km",
+ "kd":"KD 1.00",
+  "isClosed": false,
+  "rating":4.5
+
+ },
+{
+ "id": 2,
+ "logo": "/images/The Bakery Blere logo.webp",
+ "title": "The Bakery Blere",
+ "img": "/images/The Bakery Blere.webp",
+ "time": "24-34 min",
+ "distance": "1.4 km",
+ "kd": "KD 1.00",
+  "isClosed": true,
+
+    "rating": 4.5
+ },
+{
+ "id": 3,
+ "logo": "/images/Feeling Sugar logo.webp",
+ "title": "Feeling Sugar",
+ "img": "/images/Feeling Sugar.webp",
+ "time": "24-34 min",
+ "distance": "1.4km",
+ "kd": "KD 1.00",
+   "rating": 4.5,
+  "isClosed": false
+ },
+{
+ "id": 4,
+ "logo": "/images/Feeling Sugar logo.webp",
+ "title": "Feeling Sugar",
+ "img": "/images/Feeling Sugar.webp",
+ "time": "24-34 min",
+ "distance": "1.4 km",
+ "kd": "KD 1.00",
+   "rating": 4.5,
+  "isClosed": false
+ },
+{
+ "id": 5,
+ "logo": "/images/Feeling Sugar logo.webp",
+ "title": "Feeling Sugar",
+ "img": "/images/Feeling Sugar.webp",
+ "time": "24-34 min",
+ "distance": "1.4 km",
+ "kd": "KD 1.00",
+   "rating": 4.5,
+  "isClosed": false
+ }
+]

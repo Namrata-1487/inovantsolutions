@@ -1,0 +1,60 @@
+/* ========== SLIDER HEADER ALIGNMENT (inline arrows) ========== */
+.slider-header {
+ position: relative;
+}
+
+/* Move slick arrows to the right inline with heading */
+.slider-header .slick-prev,
+.slider-header .slick-next {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ background: #fff;
+ border-radius: 50%;
+ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+ width: 32px;
+ height: 32px;
+ display: flex !important;
+ align-items: center;
+ justify-content: center;
+ z-index: 5;
+}
+
+/* Previous arrow: right-aligned but spaced */
+.slider-header .slick-prev {
+ right: 52px;
+ /* space between the two buttons */
+}
+
+/* Next arrow */
+.slider-header .slick-next {
+ right: 10px;
+}
+
+/* Arrow icons */
+.slick-prev:before,
+.slick-next:before {
+ color: #ED145A !important;
+ /* brand pink */
+ font-size: 16px !important;
+ opacity: 1;
+}
+
+/* ========== RESPONSIVE FIX ========== */
+@media (max-width: 768px) {
+
+ .slider-header .slick-prev,
+ .slider-header .slick-next {
+  width: 28px;
+  height: 28px;
+  right: 0;
+ }
+
+ .slider-header .slick-prev {
+  right: 40px;
+ }
+
+ .slider-header .slick-next {
+  right: 5px;
+ }
+}

@@ -1,0 +1,57 @@
+[
+ {
+  "id": 1,
+  "name": "MAYAN",
+  "src": "/images/mayan.webp"
+ },
+ {
+  "id": 2,
+  "name": "Tamra",
+  "src": "/images/Tamra.webp"
+ },
+ {
+  "id": 3,
+  "name": "Blere",
+  "src": "/images/Blere1.webp"
+ },
+ {
+  "id": 4,
+  "name": "DGMAA",
+  "src": "/images/DGMAA.webp"
+ },
+ {
+  "id": 5,
+  "name": "OYO",
+  "src": "/images/OYO.webp"
+ },
+ {
+  "id": 6,
+  "name": "Hive",
+  "src": "/images/Hive.webp"
+ },
+ {
+  "id": 7,
+  "name": "BI",
+  "src": "/images/BI.webp"
+ },
+ {
+  "id": 8,
+  "name": "Ookie",
+  "src": "/images/Ookie.webp"
+ },
+ {
+  "id": 9,
+  "name": "Blackeye",
+  "src": "/images/Blackeye.webp"
+ },
+ {
+  "id": 10,
+  "name": "Mango",
+  "src": "/images/Mango.webp"
+ },
+ {
+  "id": 11,
+  "name": "Ward N...",
+  "src": "/images/Ward N....webp"
+ }
+]
