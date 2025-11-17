@@ -7,7 +7,7 @@
   --bg-light: #ffe8f0;
   --sucess: #009b1f;
   --brand-color2: #D1184C;
-  --brand-color3:#BC264A;
+  --brand-color3: #BC264A;
 
 }
 
@@ -83,6 +83,7 @@ input[type="search"]:focus {
 .slick-next:before {
   color: var(--brand-color) !important;
   font-size: xx-large !important;
+
 }
 
 .cardList {
@@ -178,6 +179,10 @@ input[type="search"]:focus {
 }
 
 
+.like-icon.liked {
+  color: red;
+}
+
 .closed-overlay {
   position: absolute;
   top: 0;
@@ -227,7 +232,9 @@ input[type="search"]:focus {
 /* footer section  */
 .footer {
   background-color: var(--brand-color3);
+
 }
+
 .footer a {
   text-decoration: none;
   color: white;
@@ -235,10 +242,18 @@ input[type="search"]:focus {
   padding: 0.3rem;
 
 }
-.social-media-icon{
+
+.social-media-icon {
   background-color: white;
 }
 
-.social-media-icon i{
-  color:var(--brand-color3);
+.social-media-icon i {
+  color: var(--brand-color3);
+}
+
+.footer .links,
+address,
+p {
+  font-weight: lighter !important;
+  font-size: small !important;
 }

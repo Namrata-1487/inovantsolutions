@@ -8,22 +8,25 @@ import Favourite from './Pages/Favourite';
 import Cart from './Pages/Cart';
 import AllCousins from './Pages/AllCousins';
 import Footer from './Components/Footer';
+import { FavoritesProvider } from './Components/FavoritesContext';   // ⬅️ NEW
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <main style={{ paddingTop: 80 }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/influencer" element={<Influencer />} />
-          <Route path="/favourite" element={<Favourite />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/all-cousins" element={<AllCousins />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <FavoritesProvider>   {/* ⬅️ wrap everything */}
+      <div className="App">
+        <Navbar />
+        <main style={{ paddingTop: 80 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/influencer" element={<Influencer />} />
+            <Route path="/favourite" element={<Favourite />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/all-cousins" element={<AllCousins />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </FavoritesProvider>
   );
 }
 

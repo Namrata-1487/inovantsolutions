@@ -7,6 +7,7 @@ import RestaurantList from '../Components/RestaurantList'
 
 
 const Home = () => {
+  
   return (
     <>
       <Header />

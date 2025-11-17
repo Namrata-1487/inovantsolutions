@@ -58,7 +58,7 @@ const Cousins = () => {
  return (
   <>
    <div className="container-fluid">
-    < div className="container d-flex cousinList justify-content-center align-items-center">
+    < div className="container p-0 d-flex cousinList justify-content-center align-items-center">
      <div style={{ padding: "0 8px" }} className='col-1'>
       <Link
        to='/all-cousins'
